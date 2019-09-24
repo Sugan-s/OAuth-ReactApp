@@ -1,7 +1,7 @@
 
-#### OAuth React App
+# OAuth React App
 
-## Getting stsrted
+## Getting started
 
 ```shell
 git clone https://github.com/Sugan-s/OAuth-ReactApp.git && 
@@ -10,3 +10,18 @@ npm install react react-dom react-facebook-login --save --force
 npm start
 ```
 - navigate to [localhost:8080](http://localhost:8080)
+
+In `Fasebook.js` need to change the appID according to the created facebook app's clientID
+
+``` shell
+else {
+            fbContent = ( < FacebookLogin
+                appId="625422664652947"
+                autoLoad={true}
+                fields="name,email,picture"
+                onClick={this.componentClicked}
+                callback={this.responseFacebook}/>
+
+            )
+```
+
